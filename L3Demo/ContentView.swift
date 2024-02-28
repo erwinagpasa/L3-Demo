@@ -9,13 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+      VStack (alignment: .leading, spacing: 20){
+
+        Image("london")
+         .resizable()
+         .aspectRatio(contentMode:.fit)
+         .cornerRadius(15)
+        
+        HStack {
+          Text("London Street Walk")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+
         }
-        .padding()
+        
+        Text ("Amazing London Street Walk taken in 2024!")
+      }
+
     }
 }
 
