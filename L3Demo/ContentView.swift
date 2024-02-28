@@ -17,13 +17,34 @@ struct ContentView: View {
          .cornerRadius(15)
         
         HStack {
-          Text("London Street Walk")
+          Text("Street Walk")
             .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-
+          
+          Spacer()
+          
+          VStack{
+            HStack{
+              Image(systemName: "star.fill")
+              Image(systemName: "star.fill")
+              Image(systemName: "star.fill")
+              Image(systemName: "star.fill")
+              Image(systemName: "star.leadinghalf.fill")
+            }
+            Text("Reviews 345")
+          }
+          .foregroundColor(.orange)
+          .font(.caption)
+          
         }
         
         Text ("Amazing London Street Walk taken in 2024!")
+        HStack{
+          Image(systemName: "fork.knife")
+          Image(systemName: "binoculars.fill")
+
+        }
+
       }
 
     }
